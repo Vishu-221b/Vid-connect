@@ -7,8 +7,8 @@ import Videos from "../components/Videos";
 import Sidebar from "../components/Sidebar";
 
 const Feed = () => {
-  /* const [selectedCategory, setSelectedCategory] = useState("New");
   const [videos, setVideos] = useState(null);
+  /* const [selectedCategory, setSelectedCategory] = useState("New");
 
   useEffect(() => {
     setVideos(null);
@@ -32,7 +32,7 @@ const Feed = () => {
          {/*  {selectedCategory} */} <span style={{ color: "#FC1503" }}>videos</span>
         </Typography>
 
-        <Videos /* videos={Videos} */ />
+        <Videos videos={videos} />
       </Box>
     </Stack>
   );
