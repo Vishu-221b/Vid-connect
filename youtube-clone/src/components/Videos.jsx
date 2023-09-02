@@ -1,7 +1,7 @@
+import React from "react";
 import { Stack, Box } from "@mui/material";
-import ChannelCard from "../components/ChannelCard";
-import Loader from "../components/Loader";
-import VideoCard  from "../components/VideoCard";
+
+import { ChannelCard, Loader, VideoCard } from "./";
 
 const Videos = ({ videos, direction }) => {
   if(!videos?.length) return <Loader />;
@@ -18,4 +18,4 @@ const Videos = ({ videos, direction }) => {
   );
 }
 
-export default Videos; 
+export default Videos;
