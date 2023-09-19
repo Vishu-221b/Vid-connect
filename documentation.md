@@ -19,9 +19,17 @@
 7. **src Directory**: This directory is where you typically place your source code and React components. Vite is a build tool that's designed to be fast and efficient, and it uses the `src` directory as the entry point for your project.
 
 
-# SRC files & folders in React vite
- *index.js is the main file which is responsible for rendering all of the components.
- *App.js bundles up all of the components in one and then, it is imported to index.js
- *index.css is responsible for designing the layout and is also imported to index.js.
- *components folder contains all the components which are being imported and bundeled over App.js.
- *utils folder contains all the 
+## Files and Folders in the `src` Directory
+
+1. **index.js**: This is the main file responsible for rendering all of the components. It serves as the entry point of your React application.
+
+2. **App.js**: The `App.js` file bundles up all of the components into one cohesive unit. It is then imported into `index.js`, where the application's rendering begins.
+
+3. **index.css**: The `index.css` file is responsible for designing the layout of your application. It defines the styles and is also imported into `index.js` to apply those styles to your components.
+
+## Folders in the `src` Directory
+
+4. **components Folder**: The `components` folder contains all the individual components used in your application. These components are imported and bundled together in `App.js` to build the user interface.
+
+5. **utils Folder**: The `utils` folder houses all the constants and utility functions used in your application. It provides a central location for managing constants and reusable code.
+
