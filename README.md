@@ -15,7 +15,7 @@ You can check out a live demo of this project [here](https://youtube-by-vishu.ne
         <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(342).png" style="width: 40%; max-height: 225px; alt="YouTube Clone">
     </a>
     <a href="https://youtube-by-vishu.netlify.app/" target="_blank">
-        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(343).png" width="40%" alt="YouTube Clone">
+        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(343).png"  style="width: 40%; max-height: 225px;" alt="YouTube Clone">
     </a>
 </div>
 <div style="margin: 20px 0; display: flex; justify-content: space-between; align-items: center;">
@@ -23,7 +23,7 @@ You can check out a live demo of this project [here](https://youtube-by-vishu.ne
         <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(344).png" style="width: 40%; max-height: 225px;" alt="YouTube Clone">
     </a>
     <a href="https://youtube-by-vishu.netlify.app/" target="_blank">
-        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(345).png" width="40%" alt="YouTube Clone">
+        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(345).png"  style="width: 40%; max-height: 225px;" alt="YouTube Clone">
     </a>
 </div>
 
