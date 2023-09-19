@@ -8,11 +8,15 @@ This project is a modern YouTube clone application built in React JS with Materi
 
 You can check out a live demo of this project [here](https://youtube-by-vishu.netlify.app/).
 
-<div style="display: flex; justify-content: space-between;">
-    <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(342).png" width="400" height="300" alt="YouTube Clone">
-    <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(343).png" width="50%" alt="YouTube Clone">
-    <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(344).png" style="width: 500px; height: 300px;" alt="YouTube Clone">
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(342).png" width="300" height="225" alt="YouTube Clone">
+    <br>
+    <div style="display: flex; justify-content: space-between;">
+        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(343).png" width="40%" alt="YouTube Clone">
+        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(344).png" style="width: 40%; max-height: 225px;" alt="YouTube Clone">
+    </div>
 </div>
+
 
 
 
