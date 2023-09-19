@@ -7,17 +7,26 @@ This project is a modern YouTube clone application built in React JS with Materi
 **Demo:**
 
 You can check out a live demo of this project [here](https://youtube-by-vishu.netlify.app/)
-
+<br>
 
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(342).png" width="300" height="225" alt="YouTube Clone">
-    <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(343).png" width="40%" alt="YouTube Clone">
+    <a href="https://youtube-by-vishu.netlify.app/" target="_blank">
+        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(342).png" width="300" height="225" alt="YouTube Clone">
+    </a>
+    <a href="https://youtube-by-vishu.netlify.app/" target="_blank">
+        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(343).png" width="40%" alt="YouTube Clone">
+    </a>
 </div>
 <div style="margin: 20px 0; display: flex; justify-content: space-between; align-items: center;">
-    <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(344).png" style="width: 40%; max-height: 225px;" alt="YouTube Clone">
-    <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(345).png" width="40%" alt="YouTube Clone">
+    <a href="https://youtube-by-vishu.netlify.app/" target="_blank">
+        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(344).png" style="width: 40%; max-height: 225px;" alt="YouTube Clone">
+    </a>
+    <a href="https://youtube-by-vishu.netlify.app/" target="_blank">
+        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(345).png" width="40%" alt="YouTube Clone">
+    </a>
 </div>
+
 
 
 
