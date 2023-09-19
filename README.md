@@ -12,7 +12,7 @@ You can check out a live demo of this project [here](https://youtube-by-vishu.ne
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <a href="https://youtube-by-vishu.netlify.app/" target="_blank">
-        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(342).png" width="300" height="225" alt="YouTube Clone">
+        <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(342).png" style="width: 40%; max-height: 225px; alt="YouTube Clone">
     </a>
     <a href="https://youtube-by-vishu.netlify.app/" target="_blank">
         <img src="https://raw.githubusercontent.com/Vishu-221b/Youtube-Clone/main/public/Screenshot%20(343).png" width="40%" alt="YouTube Clone">
