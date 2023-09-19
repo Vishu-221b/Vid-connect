@@ -17,3 +17,11 @@
 6. **Public Directory**: In React, the `public` directory is a special directory used for serving static assets and files that don't need to go through the build process. It's often used to store files like images, fonts, and HTML files that should be included in the final build of your React application as-is, without being transformed or bundled by tools like Webpack or Babel.
 
 7. **src Directory**: This directory is where you typically place your source code and React components. Vite is a build tool that's designed to be fast and efficient, and it uses the `src` directory as the entry point for your project.
+
+
+# SRC files & folders in React vite
+ *index.js is the main file which is responsible for rendering all of the components.
+ *App.js bundles up all of the components in one and then, it is imported to index.js
+ *index.css is responsible for designing the layout and is also imported to index.js.
+ *components folder contains all the components which are being imported and bundeled over App.js.
+ *utils folder contains all the 
