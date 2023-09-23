@@ -34,7 +34,7 @@
 5. **utils Folder**: The `utils` folder houses all the constants and utility functions used in your application. It provides a central location for managing constants and reusable code.
 
 
-# 1. const App = () => (
+# 1. App.jsx
 
 * import { BrowserRouter, Routes, Route } from "react-router-dom";
 * import { Box } from '@mui/material';
@@ -49,5 +49,83 @@
 * VideoDetail :
 * ChannelDetail :
 * SearchFeed :
+
+# 2. Navbar.jsx
+
+* import { Stack } :
+* import { Link } :
+* import logo, SearchBar :
+* "Link to="/"  :
+
+## 2.1.  SearchBar.jsx
+* import { useNavigate } { Paper, IconButton } { Paper, IconButton } SearchIcon :
+* const [searchTerm, setSearchTerm] = useState('') :
+* const navigate = useNavigate() :
+* const onhandleSubmit = (e) => {e.preventDefault() :
+*  "if (searchTerm){navigate(`/search/${searchTerm}`);setSearchTerm('');}}" :
+*  Paper component='form' nSubmit={onhandleSubmit} :
+*  input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} :
+
+# 3. Feed
+* import { Box, Stack, Typography } :
+* import { fetchFromAPI } :
+* import { Videos, Sidebar } :
+* const [selectedCategory, setSelectedCategory] = useState("New"): 
+* const [videos, setVideos] = useState(null):
+* useEffect(() => {setVideos(null);
+  fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
+  .then((data) => setVideos(data.items))}, [selectedCategory]);
+* Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory}
+* Videos videos={videos}
+
+## 3.1 Sidebar.jsx
+* import  { Stack }  { categories }
+* const Categories = ({ selectedCategory, setSelectedCategory })
+* {categories.map((category) => ()
+* onClick={() => setSelectedCategory(category.name)}
+* key={category.name}
+
+## 3.2 Videos.jsx
+* import { ChannelCard, Loader, VideoCard } from "./"
+* const Videos = ({ videos, direction }) => {if(!videos?.length) return <Loader />
+* {videos.map((item, idx) => (
+* Box key={idx}
+* {item.id.videoId && <VideoCard video={item} /> }
+* {item.id.channelId && <ChannelCard channelDetail={item} />}
+
+## Loader.jsx
+* import { Box, CircularProgress, Stack }
+* CircularProgress
+
+## VideoCard.jsx
+* import { Link } { Typography, Card, CardContent, CardMedia }, CheckCircleIcon
+* import { demoThumbnailUrl, demoVideoUrl, demoVideoTitle, demoChannelUrl, demoChannelTitle } from "../utils/constants";
+* Card
+* Link to={videoId ? `/video/${videoId}` : `/video/cV2gBU6hKfY` }
+* CardMedia image={snippet?.thumbnails?.high?.url || demoThumbnailUrl} alt={snippet?.title}
+* CardContent
+* Link to={videoId ? `/video/${videoId}` : demoVideoUrl }
+* Typography {snippet?.title.slice(0, 60) || demoVideoTitle.slice(0, 60)} :
+* Link to={snippet?.channelId ? `/channel/${snippet?.channelId}` : demoChannelUrl}
+* Typography {snippet?.channelTitle || demoChannelTitle}
+
+## ChannelCard.jsx
+* import {CardContent, CardMedia, CheckCircleIcon}
+* import { demoProfilePicture } from '../utils/constants';
+* const ChannelCard = ({ channelDetail, marginTop }) => ()
+* Link to={`/channel/${channelDetail?.id?.channelId}`}
+* CardContent
+* CardMedia
+* image={channelDetail?.snippet?.thumbnails?.high?.url || demoProfilePicture}
+* alt={channelDetail?.snippet?.title}
+* Typography{channelDetail?.snippet?.title}{' '}
+* CheckCircleIcon
+* {channelDetail?.statistics?.subscriberCount && (<Typography>
+* {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString('en-US')} Subscribers
+          
+
+
+
+
 
 
