@@ -33,3 +33,21 @@
 
 5. **utils Folder**: The `utils` folder houses all the constants and utility functions used in your application. It provides a central location for managing constants and reusable code.
 
+
+# 1. const App = () => (
+
+* import { BrowserRouter, Routes, Route } from "react-router-dom";
+* import { Box } from '@mui/material';
+* import { ChannelDetail, VideoDetail, SearchFeed, Navbar, Feed } from './components';
+
+* BrowserRouter : 
+* Box :
+* Navbar :
+* Routes :
+* "<Route exact path='/' element={<Feed />} />" :
+* Feed :
+* VideoDetail :
+* ChannelDetail :
+* SearchFeed :
+
+
