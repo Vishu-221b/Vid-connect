@@ -122,6 +122,73 @@
 * CheckCircleIcon
 * {channelDetail?.statistics?.subscriberCount && (<Typography>
 * {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString('en-US')} Subscribers
+
+
+## VideoDetail.jsx
+* import { Link, useParams } from "react-router-dom";
+* import ReactPlayer from "react-player";
+* import { fetchFromAPI } from "../utils/fetchFromAPI";
+
+* const VideoDetail = () => {
+* const [videoDetail, setVideoDetail] = useState(null);
+*  const [videos, setVideos] = useState(null);
+*  const { id } = useParams();
+
+* *  useEffect(() => {
+    fetchFromAPI(`videos?part=snippet,statistics&id=${id}`)
+      .then((data) => setVideoDetail(data.items[0]))
+fetchFromAPI(`search?part=snippet&relatedToVideoId=${id}&type=video`)
+      .then((data) => setVideos(data.items))
+  }, [id]);
+
+* if(!videoDetail?.snippet) return <Loader />;
+* const { snippet: { title, channelId, channelTitle }, statistics: { viewCount, likeCount } } = videoDetail;
+
+* ReactPlayer url={`https://www.youtube.com/watch?v=${id}`} className="react-player" controls 
+* Link to={`/channel/${channelId}`}
+* {channelTitle}
+* {parseInt(viewCount).toLocaleString()} views
+* {parseInt(likeCount).toLocaleString()} likes
+* Videos videos={videos} direction="column" />
+
+
+## ChannelDetail.jsx
+* import { useParams } { fetchFromAPI }
+* import { Videos, ChannelCard }
+  
+* const ChannelDetail = () => {
+* const [channelDetail, setChannelDetail] = useState();
+* const [videos, setVideos] = useState(null);
+* const { id } = useParams();
+
+* * useEffect(() => {
+* * const fetchResults = async () => {
+* * const data = await fetchFromAPI(`channels?part=snippet&id=${id}`);
+* * setChannelDetail(data?.items[0]);
+* * const videosData = await fetchFromAPI(`search?channelId=${id}&part=snippet%2Cid&order=date`);
+* * setVideos(videosData?.items);
+ 
+* fetchResults();}, [id]);
+
+* div style={{height:'300px',background: 'linear-gradient(90deg, rgba(0,238,247,1) 0%, rgba(206,3,184,1) 100%, rgba(0,212,255,1) 100%)',zIndex: 10,}} 
+* ChannelCard channelDetail={channelDetail} marginTop="-93px" 
+* Videos videos={videos}
+
+
+## SearchFeed.jsx
+* import { useParams } { fetchFromAPI } { Videos }
+* const SearchFeed = () => {
+* const [videos, setVideos] = useState(null);
+* const { searchTerm } = useParams();
+
+* * useEffect(() => {
+    fetchFromAPI(`search?part=snippet&q=${searchTerm}`)
+      .then((data) => setVideos(data.items))
+  }, [searchTerm]);
+
+* Typography{Search Results for <span style={{ color: "#FC1503" }}>{searchTerm}</span> videos
+* {<Videos videos={videos} />}
+
           
 
 
